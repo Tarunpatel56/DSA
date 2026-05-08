@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    // int a =5;
+    // int ans = (n>>1);
+    // cout>>ans>>endl;
+
+    int n=100;
+    int ans = (n >> 2);
+    cout << ans;
+
+    return 0;
+}
