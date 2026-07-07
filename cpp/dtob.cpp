@@ -1,20 +1,36 @@
+#include<cmath>
 #include <iostream>
-
 using namespace std;
-int decimalToBinaray(int n){
-    while (n>0)
-    {
-        int bit = n%2;
-        cout<<bit<<endl;
-        n = n/2;
-    }
-    return 0;
+
+
+long long decimalToBinary(int n) {
+    // if (n == 0)
+    //     return 0;
+
+    // long long binaryNo = 0;
+    // long long place = 1;
+
+    // while (n > 0) {
+    //     int bit = n % 2;
+    //     binaryNo += bit * place;
+    //     place *= 10;
+    //     n /= 2;
+    // }
+    int binaryNo =0;
     
+    int i = 0;
+     while (n>0) { 
+        int bit = (n & 1); 
+        binaryNo = bit*pow(10,i++)+ binaryNo;
+         n = n>>1; }
+
+    return binaryNo;
 }
-int main(){
-    int n;
-    cin>>n;
-    int binary = decimalToBinaray(n);
-    
-    return 0;
+
+int main() {
+    int n; cin>>n; int binary = decimalToBinary(n); cout<<binary<<endl; return 0;
+    // int n;
+    // cin >> n;
+
+    // cout << decimalToBinary(n);
 }
