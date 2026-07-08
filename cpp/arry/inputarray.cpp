@@ -7,6 +7,11 @@ int main(){
     { cout<<"enter tha value";
       cin>>arr[index];
     }
+    for (int index = 0; index <= 4; index++)
+    {
+       cout<<arr[index]<<"";
+    }
+    
     
     return 0;
 }
