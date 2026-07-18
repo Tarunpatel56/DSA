@@ -1,1 +1,1 @@
- max = arr[i];
+arr[i]>secondmax && arr[i]!= max

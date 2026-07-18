@@ -12,16 +12,16 @@ int main(){
     for (int i=1;i<=4;i++)
     {
             if (arr[i]>max)
-          { max= arr[i];}
-           else if 
-            (arr[i]>secondmax && arr[i]!= max )
+          {
+             max= arr[i];}
+           else if (arr[i]>secondmax && arr[i]!= max )
         {secondmax = arr[i];
            }
 
      
 
     }
-    // cout <<"first larget "<<max;
+    cout <<"first larget "<<max;
     cout <<secondmax;
 
   
